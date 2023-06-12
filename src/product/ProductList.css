@@ -1,0 +1,27 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
